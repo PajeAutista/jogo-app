@@ -3,41 +3,43 @@ onLoad();
 //Função principal
 function onLoad() {
   //Cria o array de pessoas
-  let pessoas = [];
+  let jogos = [];
 
   //Cria a pessoa 1
-  let pessoa1 = {
-    nome: 'João',
-    idade: 18
+  let lol = {
+    nome: 'lol',
+    faixaEtaria: 18,
+    tamanho: 8
   };
   
   //Cria a pessoa 2
-  let pessoa2 = {
-    nome: 'Paulo',
-    idade: 25
+  let minecraft = {
+    nome: 'minecraft',
+    faixaEtaria: 25,
+    tamanho: 2
   };
 
   //Cria a pessoa 3
-  let pessoa3 = {
-    nome: 'Julio',
-    idade: 10
+  let rust = {
+    nome: 'Rust',
+    faixaEtaria: 10,
+    tamanho: 16
   };
 
-  //Adiciona as 3 pessoas no array de pessoas
-  pessoas.push(pessoa1);
-  pessoas.push(pessoa2);
-  pessoas.push(pessoa3);
+
+  jogos.push(lol);
+  jogos.push(minecraft);
+  jogos.push(rust);
 
   
-  //Ordena as pessoas de acordo com a idade da pessoa.
-  pessoas.sort(ordenarPorIdade);
-  
-  //Imprime o array ordenado por idade
-  imprimirArray('spanOrdenadaPorIdade', pessoas);
+
+  jogos.sort(ordenarPorfaixaEtaria);
+
+  imprimirArray('spanOrdenadaPorfaixaEtaria', jogos);
 }
 
-function ordenarPorIdade(a, b){
-return a.idade - b.idade;
+function ordenarPorfaixaEtaria(a, b){
+return a.faixaEtaria - b.faixaEtaria;
 }
 
 function imprimirArray(id, array) {
@@ -45,7 +47,7 @@ function imprimirArray(id, array) {
   span.innerHTML = '';
 
   for (let i = 0; i < array.length; i++) {
-    span.innerHTML += array[i].nome + ', idade ' + array[i].idade + ' anos.<br/>';
+    span.innerHTML += array[i].nome + ' = faixa Etaria ' + array[i].faixaEtaria + ', requerido ' + array[i].tamanho + ' gigas<br>';
   }
 }
 
@@ -104,3 +106,4 @@ function DeleteTodo(pos) {
 function saveToStorage() {
     localStorage.setItem("list_todos", JSON.stringify(todos));
 }
+
