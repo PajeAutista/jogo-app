@@ -1,25 +1,25 @@
 onLoad();
 
-//Função principal
+
 function onLoad() {
-  //Cria o array de pessoas
+
   let jogos = [];
 
-  //Cria a pessoa 1
+
   let lol = {
     nome: 'lol',
     faixaEtaria: 18,
     tamanho: 8
   };
   
-  //Cria a pessoa 2
+
   let minecraft = {
     nome: 'minecraft',
     faixaEtaria: 25,
     tamanho: 2
   };
 
-  //Cria a pessoa 3
+
   let rust = {
     nome: 'Rust',
     faixaEtaria: 10,
