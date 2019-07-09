@@ -74,8 +74,7 @@ function imprimirArray(id, array) {
   }
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//codigo normal
+//input com o li
 
 var listElement = document.querySelector("#app ul")
 var inputElement = document.querySelector("#app input")
