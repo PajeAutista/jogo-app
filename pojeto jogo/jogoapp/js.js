@@ -39,6 +39,11 @@ function onLoad() {
     tamanho: 15
   };
 
+  let Fortnite = {
+    nome: 'fortnite',
+    faixaEtaria: 15,
+    tamanho: 25
+  };
  
 
 
@@ -47,7 +52,7 @@ function onLoad() {
   jogos.push(rust);
   jogos.push(PvZ);
   jogos.push(cs);
-  
+  jogos.push(Fortnite);
 
   
 
