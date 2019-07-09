@@ -27,9 +27,27 @@ function onLoad() {
   };
 
 
+  let PvZ = {
+    nome: 'Plantas vs Zumbis',
+    faixaEtaria: 10,
+    tamanho: 8
+  };
+
+  let cs = {
+    nome: 'Counter strike',
+    faixaEtaria: 14,
+    tamanho: 15
+  };
+
+ 
+
+
   jogos.push(lol);
   jogos.push(minecraft);
   jogos.push(rust);
+  jogos.push(PvZ);
+  jogos.push(cs);
+  
 
   
 
